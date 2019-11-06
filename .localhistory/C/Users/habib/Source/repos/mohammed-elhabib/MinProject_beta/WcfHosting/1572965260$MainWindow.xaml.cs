@@ -12,9 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Min_Project.UserSr;
 
-namespace Min_Project.view.windows
+namespace WcfHosting
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,25 +22,7 @@ namespace Min_Project.view.windows
     {
         public MainWindow()
         {
-            //     InitializeComponent();
-
-            UserClient serviceClient = new UserClient();
-        serviceClient.add();
-        }
-
-
-        private void ResizeAction(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void MinAction(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void PowerAction(object sender, RoutedEventArgs e)
-        {
-            App.Current.Shutdown();
+            InitializeComponent();
         }
     }
 }
-

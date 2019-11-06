@@ -25,8 +25,8 @@ namespace Min_Project.view.windows
         {
             //     InitializeComponent();
 
-            UserClient serviceClient = new UserClient();
-        serviceClient.add();
+            UserServiceClient serviceClient = new UserServiceClient();
+         MessageBox.Show(serviceClient.AddUser());
         }
 
 

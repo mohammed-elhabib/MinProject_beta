@@ -57,7 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Connected Services\UserSr\Reference.cs">
+    <Compile Include="Connected Services\ServiceUser\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -108,10 +108,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\UserSr\User.wsdl" />
-    <None Include="Connected Services\UserSr\User.xsd">
+    <None Include="Connected Services\ServiceUser\item.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\ServiceUser\UserService.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -131,19 +131,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\UserSr\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceUser\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\UserSr\User.disco" />
+    <None Include="Connected Services\ServiceUser\item.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\UserSr\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceUser\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\UserSr\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceUser\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\UserSr\Reference.svcmap">
+    <None Include="Connected Services\ServiceUser\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

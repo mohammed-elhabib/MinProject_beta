@@ -36,10 +36,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel Background="Red" Width="200">
-                <ListView>
-                    
-                </ListView>
+            <StackPanel Background="Red" Width="300">
+                
             </StackPanel>
         </Grid>
     </Grid>

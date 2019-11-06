@@ -108,10 +108,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\UserSr\User.wsdl" />
-    <None Include="Connected Services\UserSr\User.xsd">
+    <None Include="Connected Services\UserSr\item.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\UserSr\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\UserSr\UserService.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -134,7 +137,7 @@
     <WCFMetadataStorage Include="Connected Services\UserSr\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\UserSr\User.disco" />
+    <None Include="Connected Services\UserSr\item.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\UserSr\configuration91.svcinfo" />

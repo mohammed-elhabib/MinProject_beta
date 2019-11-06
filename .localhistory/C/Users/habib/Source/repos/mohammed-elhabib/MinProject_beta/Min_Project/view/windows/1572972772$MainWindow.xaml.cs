@@ -13,16 +13,31 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Min_Project.view
+namespace Min_Project.view.windows
 {
     /// <summary>
-    /// Interaction logic for userView.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class userView : Page
+    public partial class MainWindow : Window
     {
-        public userView()
+        public MainWindow()
         {
             InitializeComponent();
         }
+
+
+        private void ResizeAction(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void MinAction(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void PowerAction(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
+        }
     }
 }
+

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,9 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Min_Project.UserSr;
-
-namespace Min_Project.view.windows
+using WcfServices;
+namespace WcfHosting
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,25 +23,19 @@ namespace Min_Project.view.windows
     {
         public MainWindow()
         {
-            //     InitializeComponent();
-
-            UserClient serviceClient = new UserClient();
-        serviceClient.add();
+            InitializeComponent();
         }
 
-
-        private void ResizeAction(object sender, RoutedEventArgs e)
+        ServiceHost host;
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            host = new ServiceHost(typeof(WcfServices.UserService));
+            host.Open();
         }
-        private void MinAction(object sender, RoutedEventArgs e)
-        {
 
-        }
-        private void PowerAction(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            App.Current.Shutdown();
+            host.Close();
         }
     }
 }
-
