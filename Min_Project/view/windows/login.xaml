@@ -46,7 +46,7 @@
             </Grid.RowDefinitions>
 
                 <StackPanel HorizontalAlignment="Center" Margin="0 0 0 15" Grid.Row="0">
-                    <Image Height="150" Width="130" Source="../img/user.png"/>
+                    <Image Height="150" Width="130" Source="/Min_Project;component/img/user.png"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="1">
